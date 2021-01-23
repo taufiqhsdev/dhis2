@@ -25,4 +25,4 @@ systemctl status postgresql@12-main.service
 systemctl is-enabled postgresql
 
 8. Install POSTGIS 
-postgresql-12-postgis-3
+sudo apt-get install postgresql-12-postgis-3
