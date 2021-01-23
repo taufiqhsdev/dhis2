@@ -1,4 +1,4 @@
 # dhis2 installation 
 
-# Configure timezone
+--configure timezone
 sudo dpkg-reconfigure tzdata
