@@ -1,0 +1,27 @@
+# Operating System: Ubuntu 20.04 #
+
+1. Configure Timezone
+sudo dpkg-reconfigure tzdata
+
+2. Creating a user to run DHIS2
+sudo useradd -d /home/dhis -m dhis -s /bin/false
+
+3. Set a password of new user
+sudo passwd dhis
+
+4. Create the configuration directory
+sudo mkdir /home/dhis/config
+
+5. Set ownership of the directory to ‘dhis’ user created above
+sudo chown dhis:dhis /home/dhis/config
+
+6. Install PostgreSQL 12
+sudo apt-get update
+sudo apt-y install postgresql-12 postgresql-client-12
+
+7. systemctl is-enabled postgresql
+
+8. Install POSTGIS 
+postgresql-12-postgis-3
+
+
