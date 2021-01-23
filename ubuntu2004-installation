@@ -19,9 +19,10 @@ sudo chown dhis:dhis /home/dhis/config
 sudo apt-get update
 sudo apt-y install postgresql-12 postgresql-client-12
 
-7. systemctl is-enabled postgresql
+7. set Postgres service to come up after every system reboot 
+systemctl status postgresql.service
+systemctl status postgresql@12-main.service
+systemctl is-enabled postgresql
 
 8. Install POSTGIS 
 postgresql-12-postgis-3
-
-
